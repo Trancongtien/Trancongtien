@@ -1,61 +1,97 @@
 <!DOCTYPE html>
-<!-- 
-    1.h1-h6- tieu de
-    2.p - doan van
-    3. img- anh
-    4.a  - dat dc lien ket: <a href=" link"> (ten tu dat)</a>
-    5. ul,li  -- tao mục con
-    6. table --
-    có thể tạo bảng 
-    7. input
-    8. button
-    9. div
- -->
- <!-- css
-    internal
-    external
-    inlien  -->
-<html>
-    <!-- Phần đầu -->
-    <head>
-            <title> Tran cong Tien</title>
-                <meta charset="utf-8">
-                <link rel="stylesheet" href="main.css">
-                <!-- internal -->
-               
-         </head>
-    <!-- phần thân -->
-         <body>
-             <!-- h1 -->
-                    <h1>Tran cong Tien</h1>
-                    <input type="text">
-                    <input type="checkbox">
-                    <input type="radio">
-                    <button>Dag ky</button>
-                    <p>Tran</p>
-                
-        <a href="https://www.facebook.com/tien.trancong.2003"> Tới trang fb tiến</a>
+<html lang="en">
+
+<head>
+    <title>CSS Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: white;
+        }
+        header {
+            background-color: rgb(14, 160, 62);
+            width: 980px;
+            height: 140px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        section {
+            display: -webkit-flex;
+            display: flex;
+        }
+        nav {
+            width: 270px;
+            height: 450px;
+            background: rgb(14, 160, 62);
+            color: white;
+            text-align: center;
+            font-size: 35px;
+            margin-bottom: 15px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            width: 690px;
+            height: 450px;
+            text-align: center;
+            font-size: 35px;
+            background-color: rgb(14, 160, 62);
+            margin-bottom: 15px;
+            margin-left: 20px;
+        }
+
+        footer {
+            background-color: rgb(14, 160, 62);
+            width: 980px;
+            height: 70px;
+            font-size: 35px;
+            text-align: center;
+            color: white;
+        }
+        @media (max-width: 600px) {
+            section {
+                -webkit-flex-direction: column;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>Header</h2>
+    </header>
+
+    <section>
+        <nav>
             <ul>
-            <li>Tran cong</li>
-            <li>Cai data</li>
-            <li>anh yeu emJrq5rX96</li>
-            <li>anh lai</li>
+                Sidebar
+            </ul>
+        </nav>
 
+        <article>
+            <h1>Content</h1>
 
-          </ul>
-    <table>
-        <thead>
-    <th>ten</th>
-    <th>nha</th>
+        </article>
+    </section>
 
-        </thead>
-        <tbody>
-            <td> Tien  </td>
-            <td> trong</td>
-        </tbody>
-    </table>
-    
-  <h2 title="day la tieu de">Attribute?</h2>
-    </body>
+    <footer>
+        <p>Footer</p>
+    </footer>
+
+</body>
 
 </html>
